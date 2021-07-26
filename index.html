@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Taps Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style media="screen">
+      *,body{box-sizing:border-box;font-family:'Roboto Mono'}
+      body{
+        background-color:#9fe2c5;
+      }
+      body > section{
+        width:90%;
+        min-height:600px;
+        margin:20px auto;
+        background-color:#202020;
+        color:white;
+        padding:5px;
+        border-radius:20px;
+        box-shadow: 0 0 8px #222;
+      }
+      .top ul:first-child{list-style-type:none;padding:0;margin:0;float:left}
+      .top ul:first-child li{float:left;padding:5px 50px;background-color:#565656;border-radius:20% 20% 0 0;cursor:pointer;margin-right:1px;box-shadow: 0 0 5px #111 inset;}
+      .top ul:last-child{list-style-type:none;padding:0;margin:0;float:right;margin-bottom:5px}
+      .top ul:last-child li{width:18px;height:18px;float: left;background-color:orange;border-radius:50%;margin-right:12px;cursor:pointer;box-shadow: 0 0 5px #555 inset;}
+      .top ul:last-child li:first-child{background-color:green}
+      .top ul:first-child .inactive{background-color:#343434}
+      .top ul:last-child li:last-child{background-color:red}
+      .top{border-bottom:4px solid #343434;padding-top:10px;overflow:auto}
+      div{min-height:520px;max-height:520px;margin-top:15px;background-color:#efefef;border-radius:20px;padding:20px;color:#202020;font-size:1.8em;text-align:center;box-shadow: 0 2px 8px 3px #777 inset;word-wrap:break-word;overflow:auto}
+      div:not(:first-of-type){display:none}
+    </style>
+  </head>
+  <body>
+    <section>
+      <section class="top">
+        <ul>
+          <li id="tab1">Home</li>
+          <li id="tab2" class="inactive">Gallery</li>
+          <li id="tab3" class="inactive">About Us</li>
+          <li id="tab4" class="inactive">Contact us</li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+<!--////////     Here Begins other works      ///////-->
+
+
+      <div id="tab1-content"></div>
+
+
+
+      <div id="tab2-content">Gallery</div>
+
+
+
+      <div id="tab3-content">About Us</div>
+
+      
+      <div id="tab4-content">Contact us</div>
+
+
+
+
+    </section>
+    <script src="jq.js" charset="utf-8"></script>
+    <script src="js.js" charset="utf-8"></script>
+  </body>
+</html>
